@@ -30,15 +30,16 @@ class uploadComponent extends Component {
 			method: 'POST',
 			body: data,
         });
-
-        window.location.reload();
+        setTimeout(function() {
+            document.location.reload()
+        }, 2000);
       }
 
     render(){
         return(
             <div id="container" >
                 <form >
-                    <h3>Upload QR code to scan</h3>
+                    <h3>Upload QR code image to scan</h3>
                     <div class="form-group">
                         <input onChange={this.onNameChange} type="text" class="form-control" id="fileName" placeholder="QR kodo pavadinimas"/>
                     </div>

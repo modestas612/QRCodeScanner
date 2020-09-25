@@ -3,6 +3,7 @@ import 'matchmedia-polyfill';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import UploadComponent from './components/uploadComponent';
+import UrlComponent from './components/urlComponent';
 import QrComponent from './components/qrComponent';
 class App extends Component {
 
@@ -21,6 +22,13 @@ class App extends Component {
           <div className="col-md-12">
             <div className="form-group files color">
               <UploadComponent/>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="form-group files color">
+              <UrlComponent/>
             </div>
           </div>
         </div>

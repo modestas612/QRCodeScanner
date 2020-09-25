@@ -42,7 +42,7 @@ export default class qrComponent extends Component {
                                 <th scope="row"><p>{data.id}</p></th>
                                 <td><p>{data.uniqCode}</p></td>
                                 <td><p>{data.name}</p></td>
-                                <td><img src={data.image.url} alt={data.image.filename}/></td>
+                                <td><img width="100" height="100" src={`data:api/allQR/png;base64,${data.image.picByte}`} alt={data.image.filename}/></td>
                             </tr>
                         )
                     })}

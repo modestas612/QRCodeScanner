@@ -25,4 +25,6 @@ public class QRImage implements Serializable {
     @Column(name = "url")
     private String url;
 
+    @Column(name = "picByte", length = 1000)
+    private byte[] picByte;
 }
